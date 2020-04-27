@@ -23,7 +23,7 @@ def get_japanese_emoticon(file, western_emoticon)
   library.each do |word, language|
     language.each do |key, emoticon|
       if western_emoticon == emoticon
-        translated_emoticon = emoticon
+        translated_emoticon = library[word][:japanese][emoticon]
       end
     end
   end
