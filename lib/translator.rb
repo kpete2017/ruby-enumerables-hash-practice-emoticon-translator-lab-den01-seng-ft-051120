@@ -35,7 +35,7 @@ def get_english_meaning(file, eastern_emoticon)
   library = load_library(file)
   library.each do |word, language|
     language.each do |key, emoticon|
-      if eastern_emoticon_emoticon == emoticon
+      if eastern_emoticon == emoticon
         translated_word = word.to_s
       end
     end
