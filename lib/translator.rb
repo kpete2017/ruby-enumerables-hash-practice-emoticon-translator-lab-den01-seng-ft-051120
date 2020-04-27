@@ -18,12 +18,12 @@ def load_library(file)
 end
 
 def get_japanese_emoticon(file, western_emoticon)
-  translated_word = "Sorry, that emoticon was not found"
+  translated_emoticon = "Sorry, that emoticon was not found"
   library = load_library(file)
   library.each do |word, language|
     language.each do |key, emoticon|
       if western_emoticon == emoticon
-        translated_word = word.to_s
+        translated_emoticon = emoticon
       end
     end
   end
