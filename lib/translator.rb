@@ -27,7 +27,7 @@ def get_japanese_emoticon(file, western_emoticon)
       end
     end
   end
-  translated_word
+  translated_emoticon
 end
 
 def get_english_meaning(file, eastern_emoticon)
